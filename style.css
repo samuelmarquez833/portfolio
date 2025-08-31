@@ -109,6 +109,7 @@ body {
   color: #555;
 }
 
+/*
 .btn {
   display: inline-block;
   background: #1c1c28;
@@ -121,7 +122,7 @@ body {
 
 .btn:hover {
   background: #333;
-}
+}*/
 
 
 
@@ -161,16 +162,50 @@ body {
 }
 
 .projects__card {
-  background: #fff;
   padding: 2rem;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.projects__card--one{
+  background-image: url('assets/screenshots_of_the_projects/preview_barber_landing_page.png');
+}
+
+.projects__card--two{
+  background-image: url('assets/screenshots_of_the_projects/preview_blog_tamplate.png');
+}
+
+
+.projects__card--three{
+  background-image: url('assets/screenshots_of_the_projects/preview_spaace_tourism.png');
 }
 
 .projects__card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
+
+.project__info-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.info__github-icon, .info__web_icon{
+  width: 50px;
+  margin: 0 10px 0 10px;
+}
+
+
+
+
 
 /* Contact */
 .contact__container{
